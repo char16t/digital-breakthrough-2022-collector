@@ -1,1 +1,2 @@
-solution.csv
+target/
+!target/.gitkeep
