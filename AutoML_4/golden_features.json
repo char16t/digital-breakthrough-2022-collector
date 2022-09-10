@@ -1,0 +1,42 @@
+{
+    "new_features": [
+        {
+            "feature1": "project_id",
+            "feature2": "summary_cluster",
+            "operation": "diff",
+            "score": 0.9994786513
+        },
+        {
+            "feature1": "summary_cluster",
+            "feature2": "project_id",
+            "operation": "sum",
+            "score": 1.0180580034
+        },
+        {
+            "feature1": "summary_cluster",
+            "feature2": "project_id",
+            "operation": "ratio",
+            "score": 1.0203785812
+        },
+        {
+            "feature1": "project_id",
+            "feature2": "summary_cluster",
+            "operation": "ratio",
+            "score": 1.0226386154
+        },
+        {
+            "feature1": "summary_cluster",
+            "feature2": "project_id",
+            "operation": "multiply",
+            "score": 1.0322623821
+        }
+    ],
+    "new_columns": [
+        "project_id_diff_summary_cluster",
+        "summary_cluster_sum_project_id",
+        "summary_cluster_ratio_project_id",
+        "project_id_ratio_summary_cluster",
+        "summary_cluster_multiply_project_id"
+    ],
+    "ml_task": "regression"
+}

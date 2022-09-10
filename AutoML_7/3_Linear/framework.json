@@ -1,0 +1,137 @@
+{
+    "uid": "f90d45bb-3bfb-4fa6-8a30-044f7293b8ae",
+    "name": "3_Linear",
+    "preprocessing": [
+        {
+            "scale": [
+                {
+                    "scale": [
+                        10.294879667198014,
+                        28.033096949470707
+                    ],
+                    "mean": [
+                        17.462017434620176,
+                        47.19323370693234
+                    ],
+                    "var": [
+                        105.98454736208708,
+                        785.8545245784238
+                    ],
+                    "n_samples_seen": 4818,
+                    "n_features_in": 2,
+                    "columns": [
+                        "project_id",
+                        "summary_cluster"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    1.2609459261157028
+                ],
+                "mean": [
+                    8.79560286861768
+                ],
+                "var": [
+                    1.5899846285877872
+                ],
+                "n_samples_seen": 4818,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    60.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "project_id": [
+                        "scale_normal"
+                    ],
+                    "summary_cluster": [
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.1.2",
+            "algorithm_name": "Linear Regression",
+            "algorithm_short_name": "Linear",
+            "uid": "cb954d7b-88d3-49f3-83d9-8873dfc346db",
+            "params": {
+                "model_type": "Linear",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 43,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_steps": 1,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "project_id": [
+                    "scale_normal"
+                ],
+                "summary_cluster": [
+                    "scale_normal"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "scale_log_and_normal"
+            ],
+            "ml_task": "regression"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "X_path": "AutoML_7/X.data",
+            "y_path": "AutoML_7/y.data",
+            "results_path": "AutoML_7"
+        },
+        "learner": {
+            "model_type": "Linear",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "seed": 43,
+            "explain_level": 2
+        },
+        "automl_random_state": 42,
+        "ml_task": "regression",
+        "explain_level": 2,
+        "name": "3_Linear",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "3_Linear/learner_fold_0.linear"
+    ],
+    "predictions_fname": "3_Linear/predictions_validation.csv",
+    "metric_name": "r2",
+    "final_loss": 0.034569303430296516,
+    "train_time": 5.722273349761963,
+    "is_stacked": false
+}

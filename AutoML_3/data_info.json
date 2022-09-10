@@ -1,0 +1,18 @@
+{
+    "columns": [
+        "project_id"
+    ],
+    "rows": 6424,
+    "cols": 1,
+    "target_is_numeric": true,
+    "columns_info": {
+        "project_id": [
+            "scale"
+        ]
+    },
+    "target_info": [
+        "scale_log"
+    ],
+    "n_features": 1,
+    "is_sample_weighted": false
+}

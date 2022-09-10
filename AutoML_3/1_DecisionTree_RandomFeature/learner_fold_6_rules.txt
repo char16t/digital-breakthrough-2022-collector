@@ -1,0 +1,16 @@
+if (project_id <= 22.0) and (random_feature > 0.034) and (random_feature > 0.052) then response: 14095.648 | based on 2,247 samples
+
+if (project_id <= 22.0) and (random_feature <= 0.034) and (random_feature > -0.928) then response: 11792.71 | based on 2,214 samples
+
+if (project_id > 22.0) and (project_id <= 40.5) and (random_feature <= 0.331) then response: 39580.588 | based on 442 samples
+
+if (project_id > 22.0) and (project_id > 40.5) and (random_feature <= 0.318) then response: 21385.442 | based on 283 samples
+
+if (project_id > 22.0) and (project_id <= 40.5) and (random_feature > 0.331) then response: 23693.672 | based on 256 samples
+
+if (project_id <= 22.0) and (random_feature <= 0.034) and (random_feature <= -0.928) then response: 18199.888 | based on 178 samples
+
+if (project_id > 22.0) and (project_id > 40.5) and (random_feature > 0.318) then response: 10581.0 | based on 120 samples
+
+if (project_id <= 22.0) and (random_feature > 0.034) and (random_feature <= 0.052) then response: 64880.0 | based on 42 samples
+

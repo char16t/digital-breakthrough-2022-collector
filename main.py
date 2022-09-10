@@ -17,7 +17,6 @@ from solution.load_data import \
     y_train, \
     y_test
 
-
 dd = merged.groupby(['project_id'])['overall_worklogs'].agg('median').reset_index()
 def getMedian(pid): 
     return dd[dd['project_id'] == pid]['overall_worklogs'].iloc[0].astype(np.int64)

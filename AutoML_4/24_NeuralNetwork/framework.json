@@ -1,0 +1,459 @@
+{
+    "uid": "dbc91702-e9e9-497a-b0e8-8a7b7e90711f",
+    "name": "24_NeuralNetwork",
+    "preprocessing": [
+        {
+            "scale": [
+                {
+                    "scale": [
+                        10.314806307889501,
+                        28.77433556520932
+                    ],
+                    "mean": [
+                        17.461373808133878,
+                        48.56839852111306
+                    ],
+                    "var": [
+                        106.39522916927704,
+                        827.96238721927
+                    ],
+                    "n_samples_seen": 5139,
+                    "n_features_in": 2,
+                    "columns": [
+                        "project_id",
+                        "summary_cluster"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    1.3020164580296252
+                ],
+                "mean": [
+                    8.751924371812244
+                ],
+                "var": [
+                    1.6952468569800105
+                ],
+                "n_samples_seen": 5139,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    120.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "project_id": [
+                        "scale_normal"
+                    ],
+                    "summary_cluster": [
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        },
+        {
+            "scale": [
+                {
+                    "scale": [
+                        10.354723083657417,
+                        28.88182536423025
+                    ],
+                    "mean": [
+                        17.473243821755204,
+                        48.16481805798794
+                    ],
+                    "var": [
+                        107.22029013922776,
+                        834.1598363698937
+                    ],
+                    "n_samples_seen": 5139,
+                    "n_features_in": 2,
+                    "columns": [
+                        "project_id",
+                        "summary_cluster"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    1.2654529890425577
+                ],
+                "mean": [
+                    8.783126129405066
+                ],
+                "var": [
+                    1.6013712674767433
+                ],
+                "n_samples_seen": 5139,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    60.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "project_id": [
+                        "scale_normal"
+                    ],
+                    "summary_cluster": [
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        },
+        {
+            "scale": [
+                {
+                    "scale": [
+                        10.26010613463374,
+                        28.8897370262848
+                    ],
+                    "mean": [
+                        17.462152169682817,
+                        48.66997470324966
+                    ],
+                    "var": [
+                        105.26977789394888,
+                        834.6169054478909
+                    ],
+                    "n_samples_seen": 5139,
+                    "n_features_in": 2,
+                    "columns": [
+                        "project_id",
+                        "summary_cluster"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    1.2712835857717195
+                ],
+                "mean": [
+                    8.779185847352602
+                ],
+                "var": [
+                    1.616161955452601
+                ],
+                "n_samples_seen": 5139,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    60.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "project_id": [
+                        "scale_normal"
+                    ],
+                    "summary_cluster": [
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        },
+        {
+            "scale": [
+                {
+                    "scale": [
+                        10.3966031222401,
+                        29.055815760462327
+                    ],
+                    "mean": [
+                        17.543101770772523,
+                        48.82331192839074
+                    ],
+                    "var": [
+                        108.0893564813726,
+                        844.2404295059309
+                    ],
+                    "n_samples_seen": 5139,
+                    "n_features_in": 2,
+                    "columns": [
+                        "project_id",
+                        "summary_cluster"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    1.2659466835089388
+                ],
+                "mean": [
+                    8.782948349844542
+                ],
+                "var": [
+                    1.6026210054872811
+                ],
+                "n_samples_seen": 5139,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    60.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "project_id": [
+                        "scale_normal"
+                    ],
+                    "summary_cluster": [
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        },
+        {
+            "scale": [
+                {
+                    "scale": [
+                        10.415124681904851,
+                        28.849343998159387
+                    ],
+                    "mean": [
+                        17.615369649805448,
+                        48.73501945525292
+                    ],
+                    "var": [
+                        108.47482213962363,
+                        832.2846491241351
+                    ],
+                    "n_samples_seen": 5140,
+                    "n_features_in": 2,
+                    "columns": [
+                        "project_id",
+                        "summary_cluster"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    1.277967575766645
+                ],
+                "mean": [
+                    8.77960678945799
+                ],
+                "var": [
+                    1.6332011247108758
+                ],
+                "n_samples_seen": 5140,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    60.0
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "project_id": [
+                        "scale_normal"
+                    ],
+                    "summary_cluster": [
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.1.2",
+            "algorithm_name": "Neural Network",
+            "algorithm_short_name": "Neural Network",
+            "uid": "5c34dd1e-c52d-4219-bcc3-94e9ddb1e3c2",
+            "params": {
+                "model_type": "Neural Network",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 44,
+                "dense_1_size": 64,
+                "dense_2_size": 4,
+                "learning_rate": 0.05,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        },
+        {
+            "library_version": "1.1.2",
+            "algorithm_name": "Neural Network",
+            "algorithm_short_name": "Neural Network",
+            "uid": "468c9379-d270-4e9d-a27e-b8cc32139f25",
+            "params": {
+                "model_type": "Neural Network",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 44,
+                "dense_1_size": 64,
+                "dense_2_size": 4,
+                "learning_rate": 0.05,
+                "explain_level": 2
+            },
+            "name": "learner_fold_1"
+        },
+        {
+            "library_version": "1.1.2",
+            "algorithm_name": "Neural Network",
+            "algorithm_short_name": "Neural Network",
+            "uid": "1657327e-a7d3-43af-bb96-760296b0591d",
+            "params": {
+                "model_type": "Neural Network",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 44,
+                "dense_1_size": 64,
+                "dense_2_size": 4,
+                "learning_rate": 0.05,
+                "explain_level": 2
+            },
+            "name": "learner_fold_2"
+        },
+        {
+            "library_version": "1.1.2",
+            "algorithm_name": "Neural Network",
+            "algorithm_short_name": "Neural Network",
+            "uid": "bf446e6c-9424-47f5-b2df-4f2f0a3d81ce",
+            "params": {
+                "model_type": "Neural Network",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 44,
+                "dense_1_size": 64,
+                "dense_2_size": 4,
+                "learning_rate": 0.05,
+                "explain_level": 2
+            },
+            "name": "learner_fold_3"
+        },
+        {
+            "library_version": "1.1.2",
+            "algorithm_name": "Neural Network",
+            "algorithm_short_name": "Neural Network",
+            "uid": "14c45766-d780-430b-b568-5da9b8e6dbf8",
+            "params": {
+                "model_type": "Neural Network",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 44,
+                "dense_1_size": 64,
+                "dense_2_size": 4,
+                "learning_rate": 0.05,
+                "explain_level": 2
+            },
+            "name": "learner_fold_4"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "project_id": [
+                    "scale_normal"
+                ],
+                "summary_cluster": [
+                    "scale_normal"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "scale_log_and_normal"
+            ],
+            "ml_task": "regression"
+        },
+        "validation_strategy": {
+            "validation_type": "kfold",
+            "k_folds": 5,
+            "shuffle": true,
+            "X_path": "AutoML_4/X.data",
+            "y_path": "AutoML_4/y.data",
+            "results_path": "AutoML_4"
+        },
+        "learner": {
+            "model_type": "Neural Network",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "seed": 44,
+            "dense_1_size": 64,
+            "dense_2_size": 4,
+            "learning_rate": 0.05,
+            "explain_level": 2
+        },
+        "automl_random_state": 42,
+        "ml_task": "regression",
+        "explain_level": 2,
+        "name": "24_NeuralNetwork",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 72.0
+    },
+    "saved": [
+        "24_NeuralNetwork/learner_fold_0.neural_network",
+        "24_NeuralNetwork/learner_fold_1.neural_network",
+        "24_NeuralNetwork/learner_fold_2.neural_network",
+        "24_NeuralNetwork/learner_fold_3.neural_network",
+        "24_NeuralNetwork/learner_fold_4.neural_network"
+    ],
+    "predictions_fname": "24_NeuralNetwork/predictions_out_of_folds.csv",
+    "metric_name": "r2",
+    "final_loss": 0.018077282777039017,
+    "train_time": 6.83213996887207,
+    "is_stacked": false,
+    "single_prediction_time": 0.06672501564025879
+}

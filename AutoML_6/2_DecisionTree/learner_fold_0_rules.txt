@@ -1,0 +1,32 @@
+if (project_id <= 22.0) and (summary_cluster <= 84.5) and (project_id > 9.0) and (summary_cluster > 9.5) then response: 12522.907 | based on 2,766 samples
+
+if (project_id <= 22.0) and (summary_cluster > 84.5) and (summary_cluster > 85.5) and (project_id > 9.0) then response: 11238.499 | based on 493 samples
+
+if (project_id > 22.0) and (project_id <= 40.5) and (summary_cluster > 23.5) and (summary_cluster > 25.0) then response: 32865.163 | based on 461 samples
+
+if (project_id <= 22.0) and (summary_cluster <= 84.5) and (project_id > 9.0) and (summary_cluster <= 9.5) then response: 14906.345 | based on 435 samples
+
+if (project_id > 22.0) and (project_id > 40.5) and (summary_cluster <= 69.5) and (summary_cluster > 24.5) then response: 14854.091 | based on 176 samples
+
+if (project_id > 22.0) and (project_id > 40.5) and (summary_cluster <= 69.5) and (summary_cluster <= 24.5) then response: 29868.462 | based on 78 samples
+
+if (project_id > 22.0) and (project_id > 40.5) and (summary_cluster > 69.5) and (summary_cluster > 70.5) then response: 17105.753 | based on 73 samples
+
+if (project_id > 22.0) and (project_id <= 40.5) and (summary_cluster <= 23.5) and (project_id > 31.0) then response: 19125.0 | based on 64 samples
+
+if (project_id <= 22.0) and (summary_cluster <= 84.5) and (project_id <= 9.0) and (summary_cluster > 17.0) then response: 14027.797 | based on 59 samples
+
+if (project_id > 22.0) and (project_id <= 40.5) and (summary_cluster <= 23.5) and (project_id <= 31.0) then response: 30721.2 | based on 50 samples
+
+if (project_id <= 22.0) and (summary_cluster > 84.5) and (summary_cluster > 85.5) and (project_id <= 9.0) then response: 21238.696 | based on 46 samples
+
+if (project_id <= 22.0) and (summary_cluster > 84.5) and (summary_cluster <= 85.5) and (project_id <= 14.0) then response: 125054.118 | based on 34 samples
+
+if (project_id <= 22.0) and (summary_cluster > 84.5) and (summary_cluster <= 85.5) and (project_id > 14.0) then response: 14592.727 | based on 33 samples
+
+if (project_id <= 22.0) and (summary_cluster <= 84.5) and (project_id <= 9.0) and (summary_cluster <= 17.0) then response: 32233.125 | based on 32 samples
+
+if (project_id > 22.0) and (project_id <= 40.5) and (summary_cluster > 23.5) and (summary_cluster <= 25.0) then response: 244745.455 | based on 11 samples
+
+if (project_id > 22.0) and (project_id > 40.5) and (summary_cluster > 69.5) and (summary_cluster <= 70.5) then response: 200528.571 | based on 7 samples
+

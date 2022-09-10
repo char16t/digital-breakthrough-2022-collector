@@ -9,8 +9,8 @@ df_comment_test = pd.read_csv("data/test_comments.csv")
 
 merged = pd.merge(df_issues_train, df_emp.add_prefix('assignee_'), left_on="assignee_id", right_on="assignee_id", how='inner')
 merged = pd.merge(merged, df_emp.add_prefix('creator_'), left_on="creator_id", right_on="creator_id", how='inner')
-merged.to_csv('target/merged.csv', index=False)
 
+merged.to_csv('target/merged.csv', index=False)
 X_train, X_test, y_train, y_test = train_test_split(
     merged.drop('overall_worklogs', axis=1),
     merged[['overall_worklogs']],

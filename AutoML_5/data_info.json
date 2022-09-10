@@ -1,0 +1,22 @@
+{
+    "columns": [
+        "project_id",
+        "summary_cluster"
+    ],
+    "rows": 6424,
+    "cols": 2,
+    "target_is_numeric": true,
+    "columns_info": {
+        "project_id": [
+            "scale"
+        ],
+        "summary_cluster": [
+            "scale"
+        ]
+    },
+    "target_info": [
+        "scale_log"
+    ],
+    "n_features": 2,
+    "is_sample_weighted": false
+}
