@@ -9,6 +9,10 @@ df_emp = pd.read_csv("data/employees.csv")
 df_issues_test = pd.read_csv("data/test_issues.csv")
 df_comment_test = pd.read_csv("data/test_comments.csv")
 
+merged = pd.merge(df_issues_train, df_emp.add_prefix('assignee_'), left_on="assignee_id", right_on="assignee_id", how='inner')
+merged = pd.merge(merged, df_emp.add_prefix('creator_'), left_on="creator_id", right_on="creator_id", how='inner')
+merged.to_csv('target/merged.csv', index=False)
+
 df_result = pd.DataFrame()
 df_result["id"] = df_issues_test["id"]
 df_result["overall_worklogs"] = 0
