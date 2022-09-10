@@ -12,4 +12,4 @@ df_comment_test = pd.read_csv("data/test_comments.csv")
 df_result = pd.DataFrame()
 df_result["id"] = df_issues_test["id"]
 df_result["overall_worklogs"] = 0
-df_result.to_csv('solution.csv', index=False)
+df_result.to_csv('target/solution.csv', index=False)
