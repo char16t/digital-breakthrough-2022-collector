@@ -47,5 +47,5 @@ rootLogger.warn("R2 metric: " + str(r2_score(y_test, y_pred)))
 
 df_result = pd.DataFrame()
 df_result["id"] = df_issues_test["id"]
-df_result["overall_worklogs"] = 0
+df_result["overall_worklogs"] = df_issues_test.apply(lambda row: getMedian(row['project_id']), axis=1)
 df_result.to_csv('target/solution.csv', index=False)
