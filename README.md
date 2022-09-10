@@ -4,7 +4,7 @@ Install dependencies:
 make install_deps
 ```
 
-Generate solution (`target\solution.csv`):
+Generate solution (`target/solution.csv`):
 
 ```sh
 make solve
