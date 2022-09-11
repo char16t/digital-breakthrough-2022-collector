@@ -1,6 +1,0 @@
-{
-    "new_features": [],
-    "new_columns": [],
-    "ml_task": "regression",
-    "error": "Golden Features not created. Empty scores. Input data shape: (5781, 1), (5781,)"
-}

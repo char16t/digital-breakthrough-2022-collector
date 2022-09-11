@@ -1,8 +1,0 @@
-feature,shap_importance
-project_id,0.12296248
-summary_cluster,0.1054046
-summary_cluster_multiply_project_id,0.09650415
-summary_cluster_sum_project_id,0.043404303
-project_id_diff_summary_cluster,0.040171895
-summary_cluster_ratio_project_id,0.030622164
-project_id_ratio_summary_cluster,0.013068007
