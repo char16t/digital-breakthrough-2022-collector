@@ -24,7 +24,9 @@ from solution.load_data import \
 
 
 build_d2v_summary_model()
-model= Doc2Vec.load("target/d2v.model")
+build_d2v_comments_model()
+
+model= Doc2Vec.load("target/summary.d2v.model")
 
 def cast_vector(row):
     r = np.array(list(map(lambda x: x.astype('double'), row)))
@@ -38,7 +40,7 @@ vectors = []
 for s in merged["summary"]:
   vectors.append(to_vec(s))
 vecs = pd.DataFrame(vectors)
-vecs.head()
+#vecs.head()
 merged["summary_vectorized"] = vectors
 
 from sklearn.cluster import KMeans

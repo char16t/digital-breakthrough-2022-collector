@@ -16,8 +16,8 @@ from solution.load_data import \
     merged
 
 
-def build_d2v_summary_model():
-  tagged_data = [TaggedDocument(words=word_tokenize(_d.lower()), tags=[str(i)]) for i, _d in enumerate(merged["summary"])]
+def build_d2v_comments_model():
+  tagged_data = [TaggedDocument(words=word_tokenize(_d.lower()), tags=[str(i)]) for i, _d in enumerate(df_comment_train["text"])]
   max_epochs = 100
   vec_size = 20
   alpha = 0.025
@@ -31,7 +31,7 @@ def build_d2v_summary_model():
   model.build_vocab(tagged_data)
 
   for epoch in range(max_epochs):
-      print('iteration {0}'.format(epoch))
+      print('[comments model] iteration {0}'.format(epoch))
       model.train(tagged_data,
                   total_examples=model.corpus_count,
                   epochs=model.epochs)
@@ -40,4 +40,4 @@ def build_d2v_summary_model():
       # fix the learning rate, no decay
       model.min_alpha = model.alpha
 
-  model.save("target/summary.d2v.model")
+  model.save("target/comments.d2v.model")
