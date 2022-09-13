@@ -53,12 +53,56 @@ res['kmean'].value_counts()
 merged["summary_cluster"] = res["kmean"]
 
 
+X_train, X_test, y_train, y_test = train_test_split(
+    merged[['project_id', 'summary_cluster']],
+    merged[['overall_worklogs']],
+    test_size=0.33, 
+    random_state=42,
+)
+
+
+from sklearn.dummy import DummyRegressor
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.linear_model import LinearRegression
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import r2_score
+from xgboost import XGBRegressor
+
+for strategy in ["mean", "median"]:
+  dummy = DummyRegressor(strategy=strategy)
+  dummy.fit(X_train, y_train)
+  y_pred = dummy.predict(X_test)
+  print("DummyRegressor [strategy=" + strategy + "], R2: " + str(r2_score(y_test, y_pred)))
+
+regressor = DecisionTreeRegressor(random_state=42)
+regressor.fit(X_train, y_train)
+y_pred = regressor.predict(X_test)
+print("DecisionTreeRegressor, R2: " + str(r2_score(y_test, y_pred)))
+
+reg = LinearRegression()
+reg.fit(X_train, y_train)
+y_pred = reg.predict(X_test)
+print("LinearRegression, R2: " + str(r2_score(y_test, y_pred)))
+
+bst = XGBRegressor()
+reg.fit(X_train, y_train)
+y_pred = reg.predict(X_test)
+print("XGBRegressor, R2: " + str(r2_score(y_test, y_pred)))
+
+reg = RandomForestRegressor()
+reg.fit(X_train, y_train)
+y_pred = reg.predict(X_test)
+print("RandomForestRegressor, R2: " + str(r2_score(y_test, y_pred)))
+
+
+
+
 dd = merged.groupby(['project_id'])['overall_worklogs'].agg('median').reset_index()
 def getMedian(pid): 
     return dd[dd['project_id'] == pid]['overall_worklogs'].iloc[0].astype(np.int64)
 
 y_pred = X_test[['id', 'project_id']].apply(lambda row: getMedian(row['project_id']), axis=1)
-rootLogger.warning("R2 metric: " + str(r2_score(y_test, y_pred)))
+rootLogger.warning("My median R2 metric: " + str(r2_score(y_test, y_pred)))
 
 df_result = pd.DataFrame()
 df_result["id"] = df_issues_test["id"]
