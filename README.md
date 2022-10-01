@@ -1,10 +1,14 @@
-Install dependencies:
+# Разработка алгоритма прогнозирования выполнения задачи
+
+Презентация в presentation.pdf
+
+Установить зависимости:
 
 ```sh
 make install_deps
 ```
 
-Generate solution (`target/solution.csv`):
+Сгенерировать решение (`target/solution.csv`):
 
 ```sh
 make solve
