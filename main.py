@@ -28,7 +28,7 @@ ISSUES_TRAIN_PATH = "data/train_issues.csv"
 COMMENT_TRAIN_PATH = "data/train_comments.csv"
 EMPLOYEES_PATH = "data/employees.csv"
 ISSUES_TEST = "data/test_issues.csv"
-COMMENT_TEST = "data//test_comments.csv"
+COMMENT_TEST = "data/test_comments.csv"
 
 # Reproducibility
 
