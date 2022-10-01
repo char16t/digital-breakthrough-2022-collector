@@ -3,3 +3,6 @@ pandas
 scikit-learn
 xgboost
 gensim --no-binary :all:
+lightautoml
+h2o
+mljar-supervised
